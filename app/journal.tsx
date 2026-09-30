@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
-import { Palette } from '../../src/ui/palette';
-import { Typography } from '../../src/ui/typography';
-import { EncryptionEngine } from '../../src/data/local/encryption';
-import { localDatabase } from '../../src/data/local/database';
-import { SentimentPipeline } from '../../src/ml/pipeline';
+import { Palette } from '../src/ui/palette';
+import { Typography } from '../src/ui/typography';
+import { EncryptionEngine } from '../src/data/local/encryption';
+import { localDatabase } from '../src/data/local/database';
+import { SentimentPipeline } from '../src/ml/pipeline';
 
 export default function JournalEditorScreen() {
   const [entryText, setEntryText] = useState('');
